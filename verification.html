@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Verification - Axolotl Entertainment</title>
+    <link rel="stylesheet" href="verification.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="images/logo2.jpg" alt="Axolotl Entertainment Logo">
+            <h1>Axolotl Entertainment</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="form-container">
+            <form id="otp-form" class="form">
+                <h2>OTP Verification</h2>
+                <div class="form-group">
+                    <label for="otp-code">Enter OTP</label>
+                    <input type="text" id="otp-code" name="otp-code" required>
+                    <small id="otp-error" class="form-error"></small>
+                </div>
+                <button type="submit">Verify OTP</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="verification.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up / Sign In - Axolotl Entertainment</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="images/cute-axolotl-eating-popcorn-watch-3d-movie-cartoon-vector-illustration_290315-2282.png" alt="Axolotl Entertainment Logo">
+            <h1>Axolotl Entertainment</h1>
+        </header>
+        <div class="form-container">
+            <form id="signup-form" class="form">
+                <h2>Sign Up</h2>
+                <div class="form-group">
+                    <label for="signup-username">Username</label>
+                    <input type="text" id="signup-username" name="signup-username" required>
+                    <small id="username-error" class="form-error"></small>
+                </div>
+                <div class="form-group">
+                    <label for="signup-email">Email</label>
+                    <input type="email" id="signup-email" name="signup-email" required>
+                    <small id="email-error" class="form-error"></small>
+                </div>
+                <div class="form-group">
+                    <label for="signup-password">Password</label>
+                    <input type="password" id="signup-password" name="signup-password" required>
+                </div>
+                <div class="form-group">
+                    <label for="signup-confirm-password">Confirm Password</label>
+                    <input type="password" id="signup-confirm-password" name="signup-confirm-password" required>
+                    <small id="password-error" class="form-error"></small>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="terms-checkbox" required>
+                    <label for="terms-checkbox">I agree to the <a href="#">Terms of Service</a></label>
+                </div>
+                <button type="submit">Sign Up</button>
+            </form>
+            <p>Already have an account?</p>
+            <a href="sign_in.html">
+                <button style="font-size: large;">Click here</button>
+            </a>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js"></script>
+    <script src="signup.js"></script>
+</body>
+</html>

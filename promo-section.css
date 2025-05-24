@@ -1,0 +1,74 @@
+/* Reset and base styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+}
+
+/* Custom styles for promo sections */
+.promo-section {
+    padding: 40px;
+    text-align: center;
+    background-color: rgba(37, 36, 36, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    margin-bottom: 40px;
+    transition: transform 0.3s ease;
+    margin: 20px auto;
+    max-width: 1400px;
+    
+}
+
+.promo-section:hover {
+    transform: translateY(-8px);
+}
+
+.promo-icon {
+    font-size: 3em;
+    color: #FFD700;
+    margin-bottom: 15px;
+}
+@font-face {
+    font-family:myfont;
+    src: url(VtksClassicalHit.ttf);
+}
+.promo-header {
+    font-size: 4.5em;
+    margin-bottom: 20px;
+    font-family:myfont;
+    letter-spacing: 2px;
+    color: whitesmoke
+    
+}
+
+.promo-text {
+    font-size: 1.4em;
+    line-height: 1.6;
+    margin-bottom: 30px;
+
+}
+
+.promo-button {
+    display: inline-block;
+    padding: 15px 30px;
+    margin: 10px;
+    font-size: 1em;
+    color: #111111;
+    background-color: #FFD700;
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+
+}
+
+
+.section-divider {
+    height: 5px;
+    width: 80%;
+    background-color: #23200f;
+    margin: 40px auto;
+}
+

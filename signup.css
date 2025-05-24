@@ -1,0 +1,167 @@
+/* signup.css */
+
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+/* Container styles */
+.container {
+    width: 90%;
+    max-width: 600px; /* Increased max-width */
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    border-radius: 15px;
+    padding: 20px 30px; /* Reduced padding */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Header styles */
+header img {
+    max-width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    font-size: 26px;
+    margin-top: 10px;
+    color: #333;
+}
+
+/* Form styles */
+.form {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.form h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px; /* Reduced margin-bottom */
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px; /* Reduced padding */
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #2575fc;
+}
+
+.form-error {
+    color: #ff6347;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Checkbox styles */
+#terms-checkbox {
+    margin-right: 10px;
+}
+
+label[for="terms-checkbox"] {
+    color: #333;
+}
+
+/* Button styles */
+button {
+    display: block;
+    width: 100%;
+    padding: 10px; /* Reduced padding */
+    font-size: 16px;
+    color: #fff;
+    background-color: #2575fc;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #0d47a1;
+    transform: scale(1.05);
+}
+
+a button {
+    display: inline-block;
+    text-decoration: none;
+    color: #333;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+a button:hover {
+    text-decoration: underline;
+}
+
+/* Background animation */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #ff6347, #6a11cb, #2575fc, #1abc9c, #f39c12, #e74c3c);
+    background-size: 600% 600%;
+    z-index: -1;
+    animation: GradientShift 15s ease infinite;
+}
+
+@keyframes GradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+    .container {
+        padding: 20px;
+    }
+
+    .form {
+        max-width: 100%;
+    }
+}
